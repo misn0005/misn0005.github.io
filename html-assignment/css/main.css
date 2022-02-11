@@ -1,0 +1,39 @@
+/* changes font type and size inside of body */
+body {
+    font-family: arial;
+    font-size: 18px;
+}
+/* changes background colour of header and footer */
+header, footer {
+    background-color: pink;
+}
+
+/* changes colour of main heading text */
+.site-title {
+    color: lightslategray;
+}
+/* adds a drop shadow to my image */
+#my-image {
+    box-shadow: 0px 0px 2px 1px black;
+}
+/* replaces ordered list with square bullet points */
+ol {
+ list-style-type:square;
+}
+/* adds a background to every odd item on my list unordered list  */
+ol li:nth-child(odd) {
+    background-color: paleturquoise;
+}
+
+a:link {
+    color: red; 
+    text-decoration: none;                /* removes underline from links */
+    background:yellow;                  /* changes background colour of links  */
+    border: 1px solid black;            /* adds border around links */
+}
+
+/* changes background colour of links when hovering/focused */
+
+a:hover, a:active{
+    background-color: blueviolet;
+}
