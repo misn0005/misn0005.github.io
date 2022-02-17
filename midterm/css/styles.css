@@ -28,6 +28,8 @@ body{
 
 .box {
     border: 1px solid;
+    padding: 25px;
+ 
 }
 
 .button {
