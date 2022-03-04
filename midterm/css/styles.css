@@ -1,29 +1,59 @@
 html{
 font-size: 18px;
 background-color: #aad4cf;
+box-sizing: border-box; 
+}
+*,
+*:before,
+*:after   {
+       box-sizing: inherit;
+}
+
+body{
+    background-color:rgb(206, 235, 236);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 1200px;
+    margin: 0 auto;
+   
+    
+    
+}
+
+.wrapper {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 h1 {
     color: white;
+    font-weight: 100;
 }
 
-body{
-    background-color: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
-    max-width: 1000px;
-    margin: 0 auto;
+.position {
+    font-size: 3rem;
+    top: 300px;
+    left: 33%;
+    position: relative;
+}
+
+
+
+
+/* .wrapper {
+    background-color:rgb(206, 235, 236)
     
-}
+} */
 
 
-
-.wrapper {
+.float img {
+    width: 200px;
     float: left;
-    width: 220px;
-    background-color: #aad4cf;
-    
+    margin-right: 20px;
+    margin-left: 10px
+
 }
 
 .box {
@@ -43,15 +73,12 @@ body{
 }
 
 
-/* 
+/* /* 
 h1 {
     font-size: 2.5rem;
     line-height: 2;
     font-weight: bold;
     padding-bottom: 1rem;
-}
-
-p {
-    margin-bottom: 1.5rem;
-    float: right;
 } */
+
+
