@@ -1,70 +1,136 @@
-html{
-font-size: 18px;
-background-color: #aad4cf;
-box-sizing: border-box; 
-}
-*,
-*:before,
-*:after   {
-       box-sizing: inherit;
+/* decides what the default formating will be for our entire webpage + adds our page background colour */
+
+html {
+    font-size: 18px;
+    background-color: #aad4cf;
+    box-sizing: border-box;
 }
 
-body{
-    background-color:rgb(206, 235, 236);
+/* sets the box sizing for every element on our page */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* specifies the formating for our main body + adds a lighter background colour to the body*/
+
+body {
+    background-color: rgb(206, 235, 236);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     line-height: 1.5;
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
-   
-    
-    
+    margin-bottom: 20px;
+    margin-top: -230px;
+
+
 }
 
+/* makes our header image fill the page (within the contraints of the body) */
+
+div img {
+    width: 100%;
+}
+
+/* spaces our content so we arent directly against the sides of the body */
+
 .wrapper {
-    display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
 }
+
 
 h1 {
     color: white;
     font-weight: 100;
 }
 
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+/* formats our navigation bar + adds a small black dividing line between each entry*/
+
+a {
+
+    font-size: 30px;
+    text-decoration: none;
+    border-right: solid 1px black;
+    /* float: left; */
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+    height: 50px;
+}
+
+
+/* takes away the boarder to the last item in our navigation bar */
+.nav a:last-child {
+    border: none;
+}
+
+
+/* overlays the main title of the site overtop of our header image */
+
 .position {
-    font-size: 3rem;
-    top: 300px;
+    font-size: 4rem;
+    top: 390px;
     left: 33%;
     position: relative;
 }
 
 
-
-
-/* .wrapper {
-    background-color:rgb(206, 235, 236)
-    
-} */
-
+/* floats our second image againt the left side of the page + adds a margin between the image and our text*/
 
 .float img {
-    width: 200px;
+    width: 250px;
+    height: 250px;
     float: left;
-    margin-right: 20px;
-    margin-left: 10px
+    margin-right: 25px;
+    margin-bottom: 30px;
 
 }
+
+
+div ul {
+    margin-left: -10px;
+    margin-top: -20px;
+
+}
+
+/* creates a box around the input section of our page */
 
 .box {
     border: 1px solid;
     padding: 25px;
- 
+
+
 }
 
-.button {
-    color: red;
+/* formats the text entry boxes so they stretch the full width of our body */
+
+section input {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 30px;
+
 }
+
+/* makes button same colour as the background */
+
+button {
+    background-color: rgb(206, 235, 236);
+    font-size: large;
+
+}
+
+/* adds formating to our copyright information the botton of the page */
 
 .copyright {
     font-size: 14px;
@@ -72,13 +138,7 @@ h1 {
     width: 125px;
 }
 
-
-/* /* 
-h1 {
-    font-size: 2.5rem;
-    line-height: 2;
-    font-weight: bold;
-    padding-bottom: 1rem;
-} */
-
-
+footer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
