@@ -37,6 +37,7 @@ div img {
 /* spaces our content so we arent directly against the sides of the body */
 
 .wrapper {
+    display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
 }
