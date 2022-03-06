@@ -62,6 +62,7 @@ a {
 
     font-size: 30px;
     text-decoration: none;
+    color: black;
     border-right: solid 1px black;
     /* float: left; */
     display: inline-block;
