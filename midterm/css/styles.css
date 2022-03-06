@@ -83,10 +83,11 @@ a {
 
 /* overlays the main title of the site overtop of our header image */
 
+
 .position {
     font-size: 4rem;
-    top: 390px;
-    left: 33%;
+    top: 380px;
+    text-align: center;
     position: relative;
 }
 
