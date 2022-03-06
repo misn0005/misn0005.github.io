@@ -50,10 +50,12 @@ h1 {
 
 h2 {
     font-size: 32px;
+
 }
 
 h3 {
     font-size: 28px;
+
 }
 
 /* formats our navigation bar + adds a small black dividing line between each entry*/
@@ -101,9 +103,8 @@ a {
 }
 
 /* sqeezes list items closer together */
-
-.facts ul li {
-    margin: -8px;
+li {
+    margin: -10px;
 }
 
 div ul {
@@ -111,6 +112,7 @@ div ul {
     margin-top: -20px;
 
 }
+
 
 /* creates a box around the input section of our page */
 
