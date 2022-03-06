@@ -64,11 +64,12 @@ a {
     color: black;
     text-decoration: none;
     border-right: solid 1px black;
-    /* float: left; */
-    display: inline-block;
+    float: left;
+    /* display: inline-block; */
     text-align: center;
     width: 33%;
     height: 50px;
+    margin-bottom: 40px;
 }
 
 
@@ -99,6 +100,11 @@ a {
 
 }
 
+/* sqeezes list items closer together */
+
+.facts ul li {
+    margin: -8px;
+}
 
 div ul {
     margin-left: -10px;
@@ -110,7 +116,8 @@ div ul {
 
 .box {
     border: 1px solid;
-    padding: 25px;
+    padding: 20px;
+    margin-top: -20px;
 
 
 }
