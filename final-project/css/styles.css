@@ -71,43 +71,50 @@ body {
     padding: 15px;
 }
 
-.nav_bar .black_overlay {
-    background-color: #222;
-}
-
-header nav {
-    background-color: #c78c06;
-    margin: auto;
-    padding-bottom: 0px;
-}
-
-header ul {
-    text-align: center;
-    list-style-type: none;
+nav img {
+    float: left;
     margin: 0;
     padding: 0;
+    position: absolute;
 }
 
-header li {
+
+.nav_bar .black_overlay {
+    background-color: #222;
+    color: #c78c06;
+
+}
+
+nav button {
+    all: unset;
+    display: block;
+    padding-right: 50%;
+    padding-left: 50%;
+    align-items: center;
     margin-bottom: 40px;
+    width: 100%;
+
 }
 
+header button:nth-child(2) {
+    background-color: #c78c06;
+    padding-right: 50%;
+    padding-left: 50%;
+    padding-top: 200px;
+    color: #222;
+}
 
 /* removes all decoration from links in the nav, and makes the text yellow */
-
-a {
-    text-decoration: none;
-    color: #c78c06;
-}
 
 
 header .black_back {
     background-color: #222;
+    width: 100%;
 
 }
 
 input {
-    width: 85%;
+    width: 100%;
     margin: 10px;
     height: 40px;
 }
@@ -191,7 +198,7 @@ h2 {
     margin-bottom: 15px;
     margin-right: 15px;
     height: 300px;
-    width: 500px;
+    width: 100%;
 }
 
 .about_us h2 {
@@ -522,34 +529,41 @@ footer {
     }
 
     .nav_bar nav,
-    ul,
     form {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        /* flex-direction: row; */
+        /* flex-wrap: nowrap; */
         justify-content: space-evenly;
         align-items: center;
         gap: 50px;
     }
 
-    .nav_bar a {
-        text-decoration: none;
-        color: #c78c06;
+    nav img {
+        position: relative;
     }
 
+    .nav_bar button {
+        text-decoration: none;
+        color: #c78c06;
+        padding-left: 0;
+        padding-right: 0;
+    }
 
-
-    .nav_bar ul li:nth-child(1) {
+    header button:nth-child(2) {
         background-color: #c78c06;
+        color: #222;
         padding-top: 30px;
         padding-bottom: 30px;
         padding-left: 50px;
         padding-right: 50px;
     }
 
-    .nav_bar ul li:nth-child(1) {
-        color: #222;
+    input {
+        width: 200px;
+        margin: 10px;
+        height: 40px;
     }
+
 
 
     .welcome .color-overlay {
@@ -574,6 +588,11 @@ footer {
         padding-bottom: 10px;
         padding-right: 15px;
         padding-left: 100px;
+    }
+
+
+    .about_us {
+        padding-right: 100px;
     }
 
     /* moves "our sevices" heading right */
