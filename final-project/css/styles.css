@@ -60,7 +60,6 @@ html {
     margin: auto;
 }
 
-
 body {
     line-height: normal;
     margin: auto;
@@ -71,60 +70,76 @@ body {
     padding: 15px;
 }
 
+/* floats stars image to the top left of the page */
+
 nav img {
     float: left;
     margin: 0;
-    padding: 0;
     position: absolute;
 }
-
 
 .nav_bar .black_overlay {
     background-color: #222;
     color: #c78c06;
-
 }
 
+/* removes base decoration from all buttons in the nav, aligns them in a stack and centered */
+
 nav button {
-    all: unset;
+    all: inherit;
     display: block;
     padding-right: 50%;
     padding-left: 50%;
     align-items: center;
     margin-bottom: 40px;
     width: 100%;
-
 }
 
-header button:nth-child(2) {
+/* changes the background and colour of the home button */
+
+.nav_button:nth-child(2) {
+    width: 100%;
     background-color: #c78c06;
-    padding-right: 50%;
-    padding-left: 50%;
-    padding-top: 200px;
     color: #222;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    padding-left: 50%;
+    padding-right: 50%;
 }
-
-/* removes all decoration from links in the nav, and makes the text yellow */
-
 
 header .black_back {
     background-color: #222;
     width: 100%;
-
 }
 
-input {
+form {
+    display: inline-flex;
     width: 100%;
-    margin: 10px;
     height: 40px;
 }
+
+/* makes search bar take up 95% the of form section */
+input {
+    width: 95%;
+}
+
+/* fill the remaining 5% of the form section with the search button, and adds a border */
+
+form .search_button {
+    width: 5%;
+    padding: 10px;
+    border: 1px solid #c78c06;
+}
+
 
 header .fa-solid {
     background-color: #222;
     color: #c78c06;
+    width: 20px;
+    height: 20px;
 }
 
-/* Style the submit button */
+/* Style the welcome section, adds background image */
 
 .welcome {
     color: white;
@@ -154,10 +169,11 @@ header .fa-solid {
     float: left;
     background-color: rgba(0, 0, 0, .6);
     padding: 20px;
-    margin: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-/* styles button  in the welcome section */
+/* styles button in the welcome section */
 
 .welcome button {
     width: 250px;
@@ -180,7 +196,7 @@ h2 {
     margin-bottom: 30px;
 }
 
-/* styles about us section  */
+/* styles about us section */
 
 .about_us {
     background-color: #ffe6ac;
@@ -218,14 +234,16 @@ p {
     padding-left: 20px;
 }
 
+.services img {
+    width: 100%;
+}
+
+/* adds background colours and magins to each service section */
+
 .services .img:nth-child(1) {
     background-color: #ffe6ac;
     line-height: normal;
     margin-bottom: 10px;
-}
-
-.services img {
-    width: 100%;
 }
 
 .services .img:nth-child(2) {
@@ -261,7 +279,6 @@ p {
 /* styles all the buttons used in the services section  */
 
 .services .button {
-
     width: 20%;
     background: #222;
     color: white;
@@ -276,7 +293,7 @@ p {
 
 }
 
-/* styles our vision section */
+/* styles our vision section,adds background image */
 
 .our_vision {
     color: white;
@@ -287,16 +304,14 @@ p {
     margin: 10px;
 }
 
-.our_vision .button {
+/* stypes the button inside the our vision class */
 
+.our_vision .button {
     width: 20%;
     background: #222;
     color: white;
     font-size: 17px;
     border: 1px solid grey;
-    border-left: none;
-    /* Prevent double borders */
-    cursor: pointer;
     width: auto;
     padding: 30px;
     margin: 20px;
@@ -345,7 +360,7 @@ p {
     margin-bottom: 20px;
 }
 
-/* adds yellow line under their title */
+/* adds yellow line under their job title */
 hr {
     margin: 20px;
     border: 1px solid #c78c06;
@@ -384,12 +399,14 @@ h3 {
 
 }
 
+/* styles the button in our contact class */
+
 .contact .button {
     font-size: 20px;
     background-color: #222;
     color: #c78c06;
     padding: 5px;
-    margin-left: 10px;
+    margin-top: 20px;
     margin-bottom: 30px;
 }
 
@@ -433,79 +450,11 @@ table td {
     margin: 10px;
 }
 
-
-
 .contact iframe {
     border: 0;
     width: 600px;
     height: 450px
 }
-
-
-/* 
-old code from when i used grid to lay out the table */
-/* 
-
-.hours {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-
-}
-
-.hours .block:nth-child(1) {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    background-color: #ffe6ac;
-    border: 1px solid;
-
-}
-
-.hours .block:nth-child(2) {
-    display: grid;
-    background-color: #ffe6ac;
-    border: 1px solid;
-
-}
-
-.hours .block:nth-child(3) {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 3;
-
-    border: 1px solid;
-
-}
-
-.hours .block:nth-child(4) {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 3;
-
-    border: 1px solid;
-
-}
-
-.hours .block:nth-child(5) {
-    display: grid;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 2;
-
-    border: 1px solid;
-
-}
-
-.hours .block:nth-child(6) {
-    display: grid;
-    grid-column-start: 3;
-    grid-column-end: 4;
-
-    border: 1px solid;
-
-} */
 
 /* adds footer with copyright info */
 
@@ -528,20 +477,25 @@ footer {
         margin-left: 50px;
     }
 
+    /* aligns buttons vertically and adds a gap  */
+
     .nav_bar nav,
     form {
         display: flex;
-        /* flex-direction: row; */
-        /* flex-wrap: nowrap; */
         justify-content: space-evenly;
         align-items: center;
-        gap: 50px;
+        gap: 30px;
     }
+
+    /* displays stars image on the left of the screen */
 
     nav img {
         position: relative;
+        margin: 0;
+        padding: 0;
     }
 
+    /* styles all buttons in the nav */
     .nav_bar button {
         text-decoration: none;
         color: #c78c06;
@@ -549,7 +503,8 @@ footer {
         padding-right: 0;
     }
 
-    header button:nth-child(2) {
+    /* changes background and colour of the home button */
+    .nav_button:nth-child(2) {
         background-color: #c78c06;
         color: #222;
         padding-top: 30px;
@@ -558,13 +513,33 @@ footer {
         padding-right: 50px;
     }
 
+    /* sizes search bar */
     input {
         width: 200px;
         margin: 10px;
         height: 40px;
     }
 
+    nav .fa-solid {
+        background-color: #222;
+        color: #c78c06;
+        position: absolute;
+    }
 
+    form {
+        display: inline-flex;
+        width: 100%;
+        height: 40px;
+        margin: 0;
+    }
+
+    form .search_button {
+        padding: 20px;
+        margin: 0;
+        margin-left: -40px;
+    }
+
+    /* adds padding and margins to the black background in the welcome class */
 
     .welcome .color-overlay {
         float: left;
@@ -619,8 +594,6 @@ footer {
         grid-column-start: 1;
         grid-column-end: 4;
         margin: 5px;
-
-
     }
 
     .services .img:nth-child(2) {
@@ -629,8 +602,6 @@ footer {
         grid-column-start: 4;
         grid-column-end: 7;
         margin: 5px;
-
-
     }
 
     .services .img:nth-child(3) {
@@ -640,7 +611,6 @@ footer {
         grid-column-end: 3;
         grid-row-start: 2;
         margin: 5px;
-
     }
 
     .services .img:nth-child(4) {
@@ -650,7 +620,6 @@ footer {
         grid-column-end: 5;
         grid-row-start: 2;
         margin: 5px;
-
     }
 
     .services .img:nth-child(5) {
@@ -717,9 +686,13 @@ footer {
     /* determines placement on the grid */
 
     .contact .send {
-
+        margin-top: 20px;
         grid-column-start: 1;
         grid-column-end: 1;
+    }
+
+    .send input {
+        width: 95%;
     }
 
     .contact .hours {
